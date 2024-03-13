@@ -52,7 +52,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.2.3</version>
 				<configuration>
+					<image>
+						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
+					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -61,7 +65,11 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
 		</plugins>
+
 	</build>
 
 </project>
+
+
